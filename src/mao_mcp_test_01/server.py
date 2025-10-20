@@ -16,7 +16,7 @@ async def hello(name: Optional[str] = None) -> str:
     else:
         return "Hello, World!"
 def main():
-    mcp.run(transport='sse')
+    mcp.run(transport='stdio')
 if __name__ == "__main__":
     # 初始化并运行服务器
-    mcp.run(transport='sse')
+    mcp.run(transport='stdio')
